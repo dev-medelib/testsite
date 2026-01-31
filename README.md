@@ -280,4 +280,4 @@ I'm actively working on this project and welcome feedback!
 ---
 
 *Last Updated: 2024*
-*Created with ❤️ by dev-medelib*
+*Created with ❤️ by dev-medelib* with special thanks for claud AI for readme file 🤣
