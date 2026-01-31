@@ -122,14 +122,7 @@ Then visit `http://localhost:8000` in your browser.
 
 ---
 
-## 📚 Learning Resources Used
 
-- [MDN Web Docs](https://developer.mozilla.org/) - HTML/CSS reference
-- [CSS-Tricks](https://css-tricks.com/) - Advanced CSS techniques
-- [GitHub Guides](https://guides.github.com/) - Git and GitHub workflow
-- [Web.dev](https://web.dev/) - Web best practices
-- [Flexbox Froggy](https://flexboxfroggy.com/) - Flexbox learning
-- [Grid Garden](https://cssgridgarden.com/) - CSS Grid learning
 
 ---
 
