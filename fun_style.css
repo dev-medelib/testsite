@@ -1,0 +1,366 @@
+/* ===================================
+   FUN JOKING WEBSITE - CSS STYLING
+   =================================== */
+
+/* Import fun fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* CSS Variables for easy customization */
+:root {
+    --primary-color: #ff6b9d;      /* Hot pink */
+    --secondary-color: #ffa502;    /* Orange */
+    --accent-color: #a8e6cf;       /* Mint green */
+    --dark-color: #2c3e50;         /* Dark blue-gray */
+    --light-bg: #fff9f5;           /* Light cream */
+    --white: #ffffff;
+    --text-color: #333333;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(135deg, #ffe5ec 0%, #fff9f5 50%, #e3f9ff 100%);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: slideIn 0.8s ease-out;
+}
+
+/* ===================================
+   HEADER STYLING
+   =================================== */
+
+.header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s ease-in-out;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-style: italic;
+}
+
+/* ===================================
+   MAIN CONTENT
+   =================================== */
+
+.main-content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* ===================================
+   CARD STYLING (INDEX PAGE)
+   =================================== */
+
+.card {
+    background: linear-gradient(135deg, #fff5f7 0%, #fffbf0 100%);
+    border: 3px dashed var(--primary-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.joke-preview {
+    background: var(--accent-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.joke-preview p {
+    color: var(--dark-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.joke-preview ul {
+    list-style: none;
+    color: var(--dark-color);
+}
+
+.joke-preview li {
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+/* ===================================
+   CONFESSION CARDS (SECOND PAGE)
+   =================================== */
+
+.confession-card {
+    background: linear-gradient(135deg, #fff5f7 0%, #fffbf0 100%);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Stagger animations for confession cards */
+.confession-card:nth-child(1) { animation-delay: 0.1s; }
+.confession-card:nth-child(2) { animation-delay: 0.2s; }
+.confession-card:nth-child(3) { animation-delay: 0.3s; }
+.confession-card:nth-child(4) { animation-delay: 0.4s; }
+.confession-card:nth-child(5) { animation-delay: 0.5s; }
+.confession-card:nth-child(6) { animation-delay: 0.6s; }
+
+.confession-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+}
+
+.confession-card h2 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.confession-card p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.confession-card.special {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #ffeaa7 100%);
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.confession-card.special h2 {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+}
+
+.confession-card.special p {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+/* Rating stars */
+.rating {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+/* ===================================
+   BUTTON STYLING
+   =================================== */
+
+.btn-go,
+.btn-back {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 20px;
+}
+
+.btn-go {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.btn-go:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(255, 107, 157, 0.5);
+}
+
+.btn-go:active {
+    transform: scale(0.98);
+}
+
+.btn-back {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #a8e6cf 100%);
+    color: var(--dark-color);
+    box-shadow: 0 8px 20px rgba(168, 230, 207, 0.3);
+}
+
+.btn-back:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(168, 230, 207, 0.5);
+}
+
+.btn-back:active {
+    transform: scale(0.98);
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+    background: var(--dark-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 3px solid var(--primary-color);
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 30px rgba(255, 107, 157, 0.6);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN (Mobile)
+   =================================== */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    .card,
+    .confession-card {
+        padding: 20px;
+    }
+
+    .btn-go,
+    .btn-back {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .container {
+        border-radius: 15px;
+    }
+}
+
+/* ===================================
+   ACCESSIBILITY
+   =================================== */
+
+a:focus,
+button:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
