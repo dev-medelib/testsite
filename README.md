@@ -47,27 +47,7 @@ A personal web development project designed to master **HTML5**, **CSS3**, and *
 
 ---
 
-## 📁 Project Structure
 
-```
-testsite/
-├── README.md                 # Project documentation
-├── index.html               # Main landing page
-├── style.css                # Global styling
-├── pages/
-│   ├── about.html          # About page
-│   ├── projects.html       # Projects showcase
-│   └── contact.html        # Contact page
-├── css/
-│   ├── main.css            # Main stylesheet
-│   ├── responsive.css      # Mobile responsive styles
-│   └── animations.css      # Animation effects
-├── assets/
-│   ├── images/             # Image files
-│   └── fonts/              # Custom fonts
-└── js/
-    └── script.js           # JavaScript functionality (optional)
-```
 
 ---
 
