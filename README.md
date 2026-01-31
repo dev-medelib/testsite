@@ -236,14 +236,6 @@ Through this project, I'm learning:
 
 ---
 
-## 🔗 Links & Resources
-
-- **Live Demo**: [View Site](#) (Add your deployed URL)
-- **GitHub Repository**: [dev-medelib/testsite](https://github.com/dev-medelib/testsite)
-- **Portfolio**: [dev-medelib.com](#) (Add your portfolio URL)
-
----
-
 ## 📞 Contact & Feedback
 
 I'm actively working on this project and welcome feedback!
@@ -255,11 +247,6 @@ I'm actively working on this project and welcome feedback!
 
 ---
 
-## 📄 License
-
-This project is open source and available under the **MIT License**.
-
-See the LICENSE file for more details.
 
 ---
 
@@ -271,15 +258,7 @@ See the LICENSE file for more details.
 
 ---
 
-## 📈 Project Statistics
 
-```
-Total Commits:     XX
-Active Branches:   XX
-Pull Requests:     XX
-Contributors:      1
-Last Updated:      [Date]
-```
 
 ---
 
