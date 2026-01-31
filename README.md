@@ -62,34 +62,6 @@ A personal web development project designed to master **HTML5**, **CSS3**, and *
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites:
-- Git installed on your machine
-- A text editor (VS Code, Sublime Text, etc.)
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-
-### Clone the Repository:
-```bash
-git clone https://github.com/dev-medelib/testsite.git
-cd testsite
-```
-
-### Open Locally:
-1. Navigate to the project folder
-2. Open `index.html` in your web browser
-3. Or use Live Server extension in VS Code
-
-```bash
-# If using Python 3
-python -m http.server 8000
-
-# If using Python 2
-python -m SimpleHTTPServer 8000
-```
-
-Then visit `http://localhost:8000` in your browser.
-
 ---
 
 ## 📝 Features Implemented
@@ -210,16 +182,6 @@ Through this project, I'm learning:
 
 ---
 
-## 📞 Contact & Feedback
-
-I'm actively working on this project and welcome feedback!
-
-- **Email**: [your.email@example.com]
-- **GitHub**: [@dev-medelib](https://github.com/dev-medelib)
-- **LinkedIn**: [Your LinkedIn Profile](#)
-- **Twitter**: [@yourusername](#)
-
----
 
 
 ---
